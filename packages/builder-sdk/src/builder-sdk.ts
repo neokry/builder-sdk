@@ -1,6 +1,5 @@
 import { Signer, providers } from "ethers";
 import { getMainnetSdk, getGoerliSdk } from ".dethcrypto/eth-sdk-client";
-import { ethers } from "ethers";
 
 export type MainnetSDKType = ReturnType<typeof getMainnetSdk>;
 export type GoerliSDKType = ReturnType<typeof getGoerliSdk>;
@@ -21,10 +20,3 @@ export class BuilderSDK {
     }
   }
 }
-
-const mainnetProvider = ethers.getDefaultProvider("mainnet");
-const defaultSigner = ethers.Wallet.createRandom().connect(mainnetProvider);
-const { token } = BuilderSDK.connect({
-  signerOrProvider: defaultSigner,
-  network: 1,
-});
