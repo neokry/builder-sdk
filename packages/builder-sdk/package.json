@@ -2,7 +2,7 @@
   "name": "@buildersdk/builder-sdk",
   "private": false,
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nouns builder JS SDK",
   "typings": "dist/index.d.ts",
   "source": "src/index.ts",
