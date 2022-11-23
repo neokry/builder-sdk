@@ -1,4 +1,4 @@
-import { BuilderSDK } from "@buildersdk/builder-sdk";
+import { BuilderSDK } from "@buildersdk/sdk";
 import { ethers } from "ethers";
 
 const main = async () => {

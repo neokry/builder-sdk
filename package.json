@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build:sdk": "yarn workspace @buildersdk/builder-sdk build",
+    "build:sdk": "yarn workspace @buildersdk/sdk build",
     "dev:node": "yarn workspace with-node dev",
     "dev:next": "yarn workspace with-next dev"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "@buildersdk/builder-sdk",
+  "name": "@buildersdk/sdk",
   "private": false,
   "type": "module",
   "version": "0.0.2",

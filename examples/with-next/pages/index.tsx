@@ -1,4 +1,4 @@
-import { TokenABI, BuilderSDK } from "@buildersdk/builder-sdk";
+import { TokenABI, BuilderSDK } from "@buildersdk/sdk";
 import { useContractRead } from "wagmi";
 import { BigNumber, getDefaultProvider, Wallet } from "ethers";
 import { useIsMounted } from "../hooks/useIsMounted";

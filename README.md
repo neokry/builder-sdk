@@ -7,11 +7,11 @@ Builder SDK is a Typescript library that provides type safe interactions and dat
 ## Getting started
 
 ```bash
-yarn add @buildersdk/builder-sdk
+yarn add @buildersdk/sdk
 ```
 
 ```ts
-import { BuilderSDK } from "@buildersdk/builder-sdk";
+import { BuilderSDK } from "@buildersdk/sdk";
 
 const { auction, token } = BuilderSDK.connect({
   signerOrProvider: mainnetProvider,
@@ -25,20 +25,21 @@ const tokenURI = await tokenContract.tokenURI(auctionData.tokenId);
 ```
 
 ## Examples
+
 The following examples are provided in the examples folder of this repo.
 
 - `with-next`
 - `with-node`
 
 ## Running examples
+
 To run an example locally, install dependencies.
 
 ```bash
 yarn install
 ```
-  
-Then go into an example directory, eg: with-next.
 
+Then go into an example directory, eg: with-next.
 
 ```bash
 cd examples/with-next
