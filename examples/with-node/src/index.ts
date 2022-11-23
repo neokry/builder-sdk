@@ -27,4 +27,4 @@ const main = async () => {
   console.log("totalSupply", totalSupply);
 };
 
-main();
+main().then(() => process.exit());

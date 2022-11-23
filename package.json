@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "generate:sdk": "yarn workspace builder-sdk generate",
-    "build:sdk": "yarn workspace builder-sdk build"
+    "build:sdk": "yarn workspace @buildersdk/builder-sdk build",
+    "dev:node": "yarn workspace with-node dev",
+    "dev:next": "yarn workspace with-next dev"
   },
   "workspaces": [
     "./packages/*",
