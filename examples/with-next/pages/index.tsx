@@ -14,8 +14,7 @@ export const getServerSideProps = async (): Promise<
   }>
 > => {
   const mainnetProvider = getDefaultProvider("mainnet");
-  const defaultSigner = Wallet.createRandom().connect(mainnetProvider);
-  const { auction } = BuilderSDK.connect({ signerOrProvider: defaultSigner });
+  const { auction } = BuilderSDK.connect({ signerOrProvider: mainnetProvider });
   const { tokenId, highestBid, highestBidder, endTime, startTime } =
     await auction({
       address: auctionContract,

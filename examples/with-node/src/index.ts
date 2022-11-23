@@ -3,10 +3,9 @@ import { ethers } from "ethers";
 
 const main = async () => {
   const mainnetProvider = ethers.getDefaultProvider("mainnet");
-  const defaultSigner = ethers.Wallet.createRandom().connect(mainnetProvider);
 
   const { auction, token } = BuilderSDK.connect({
-    signerOrProvider: defaultSigner,
+    signerOrProvider: mainnetProvider,
   });
 
   const auctionAddress = "0x43790fe6bd46b210eb27F01306C1D3546AEB8C1b";
