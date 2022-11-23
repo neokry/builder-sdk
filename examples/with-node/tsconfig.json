@@ -23,6 +23,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
+    "jsx": "react-jsx",
     "skipLibCheck": true
   },
   "include": ["src"]
